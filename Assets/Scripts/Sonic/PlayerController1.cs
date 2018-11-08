@@ -37,14 +37,14 @@ public class PlayerController1 : MonoBehaviour {
             transform.eulerAngles = new Vector3(0, 180, 0);
         }
 
-        if(isGrounded == true && Input.GetKeyDown(KeyCode.JoystickButton2)){
+        if(isGrounded == true && Input.GetKeyDown(KeyCode.Joystick2Button0)){
             isJumping = true;
             jumpTimeCounter = jumpTime;
             rb.velocity = Vector2.up * jumpForce;
 
         }
 
-        if(Input.GetKey(KeyCode.JoystickButton2) && isJumping == true){
+        if(Input.GetKey(KeyCode.Joystick2Button0) && isJumping == true){
 
             if(jumpTimeCounter > 0){
                 rb.velocity = Vector2.up * jumpForce;
@@ -56,7 +56,7 @@ public class PlayerController1 : MonoBehaviour {
 
         }
 
-           if(Input.GetKeyUp(KeyCode.JoystickButton2)){
+           if(Input.GetKeyUp(KeyCode.Joystick2Button0)){
                 isJumping = false;
         }
     }

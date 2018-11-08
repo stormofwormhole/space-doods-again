@@ -7,7 +7,7 @@ InputManager:
   m_Axes:
   - serializedVersion: 3
     m_Name: Horizontal1
-    descriptiveName: 
+    descriptiveName: Joystick1Button0
     descriptiveNegativeName: 
     negativeButton: left
     positiveButton: right
@@ -151,7 +151,7 @@ InputManager:
     joyNum: 0
   - serializedVersion: 3
     m_Name: Horizontal2
-    descriptiveName: 
+    descriptiveName: Joystick2Button0
     descriptiveNegativeName: 
     negativeButton: left
     positiveButton: right
