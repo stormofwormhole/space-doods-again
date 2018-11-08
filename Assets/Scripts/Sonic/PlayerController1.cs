@@ -23,7 +23,7 @@ public class PlayerController1 : MonoBehaviour {
     }
 
     void FixedUpdate() {
-        moveInput = Input.GetAxisRaw("Horizontal");
+        moveInput = Input.GetAxisRaw("Horizontal2");
         rb.velocity = new Vector2(moveInput * speed, rb.velocity.y);
     }
 
@@ -37,14 +37,14 @@ public class PlayerController1 : MonoBehaviour {
             transform.eulerAngles = new Vector3(0, 180, 0);
         }
 
-        if(isGrounded == true && Input.GetKeyDown(KeyCode.JoystickButton0)){
+        if(isGrounded == true && Input.GetKeyDown(KeyCode.JoystickButton2)){
             isJumping = true;
             jumpTimeCounter = jumpTime;
             rb.velocity = Vector2.up * jumpForce;
 
         }
 
-        if(Input.GetKey(KeyCode.JoystickButton0) && isJumping == true){
+        if(Input.GetKey(KeyCode.JoystickButton2) && isJumping == true){
 
             if(jumpTimeCounter > 0){
                 rb.velocity = Vector2.up * jumpForce;
@@ -56,7 +56,7 @@ public class PlayerController1 : MonoBehaviour {
 
         }
 
-           if(Input.GetKeyUp(KeyCode.JoystickButton0)){
+           if(Input.GetKeyUp(KeyCode.JoystickButton2)){
                 isJumping = false;
         }
     }
