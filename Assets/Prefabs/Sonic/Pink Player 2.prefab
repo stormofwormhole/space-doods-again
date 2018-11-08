@@ -20,6 +20,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4052459318320216}
   - component: {fileID: 114167248143814958}
+  - component: {fileID: 114259665231274846}
   m_Layer: 0
   m_Name: Pink Player 2
   m_TagString: Untagged
@@ -57,6 +58,7 @@ GameObject:
   - component: {fileID: 61195308820245464}
   - component: {fileID: 114306750113213858}
   - component: {fileID: 114028321400336690}
+  - component: {fileID: 114051146912630858}
   m_Layer: 0
   m_Name: Spaceman
   m_TagString: Untagged
@@ -198,6 +200,19 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 512
   jumpTime: 0.35
+--- !u!114 &114051146912630858
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1668330492228758}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9af5152c9de12b544a36bb4babb935c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  debris: {fileID: 0}
+  totalDebris: 10
 --- !u!114 &114167248143814958
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -213,6 +228,19 @@ MonoBehaviour:
   player: {fileID: 4052459318320216}
   jumpAmount: 0
   jumped: 1
+--- !u!114 &114259665231274846
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1525440440248506}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9af5152c9de12b544a36bb4babb935c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  debris: {fileID: 0}
+  totalDebris: 10
 --- !u!114 &114306750113213858
 MonoBehaviour:
   m_ObjectHideFlags: 1
