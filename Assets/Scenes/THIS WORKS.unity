@@ -225,11 +225,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4316663032741038, guid: 829cbdee05a7bd84cbba53738ada8e4c, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -4.32
+      value: -4.19
       objectReference: {fileID: 0}
     - target: {fileID: 4316663032741038, guid: 829cbdee05a7bd84cbba53738ada8e4c, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -24.4
+      value: -25.67
       objectReference: {fileID: 0}
     - target: {fileID: 4316663032741038, guid: 829cbdee05a7bd84cbba53738ada8e4c, type: 2}
       propertyPath: m_LocalPosition.z
