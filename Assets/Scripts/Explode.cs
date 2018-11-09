@@ -30,7 +30,7 @@ public class Explode : MonoBehaviour {
         for (int i=0; i< totalDebris; i++)
         {
             t.TransformPoint(0, -100, 0);
- 
+            var clone = Instantiate(debris, t.position, Quaternion.identity) as Debris;
             var body2D = clone.GetComponent<Rigidbody2D>();
             body2D.AddForce(Vector3.right * Random.Range(-500, 500));
             body2D.AddForce(Vector3.up * Random.Range(500, 2000));
