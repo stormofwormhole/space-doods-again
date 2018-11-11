@@ -20,6 +20,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4569591272611934}
   - component: {fileID: 114933494586295908}
+  - component: {fileID: 114221671803652594}
   m_Layer: 0
   m_Name: MovingPlatform3 (4)
   m_TagString: Untagged
@@ -148,6 +149,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.42, y: 0.18}
   m_EdgeRadius: 0
+--- !u!114 &114221671803652594
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1477030889992220}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dcee2f5be192f4e38a02ccb9b27e7553, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  firePoint: {fileID: 0}
+  bulletPrefab: {fileID: 0}
 --- !u!114 &114225002885230606
 MonoBehaviour:
   m_ObjectHideFlags: 1
