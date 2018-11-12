@@ -16,7 +16,7 @@ TagManager:
   - 
   - PostProcessing
   - Ground
-  - 
+  - Player
   - 
   - 
   - 
@@ -42,6 +42,9 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: players
+  - name: ground
     uniqueID: 3868018003
+    locked: 0
+  - name: player
+    uniqueID: 2271926837
     locked: 0
