@@ -13,7 +13,7 @@ private Animator animator;
 	
 	// Update is called once per frame
 	void Update () {
-		if(Input.GetKeyDown("space"))
+		if(Input.GetKeyDown(KeyCode.Joystick1Button3))
 		{
 			animator.SetTrigger("Punch");
 		}
