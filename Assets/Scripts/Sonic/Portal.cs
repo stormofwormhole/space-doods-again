@@ -22,6 +22,7 @@ public class Portal : MonoBehaviour {
         if(Vector2.Distance(transform.position, other.transform.position ) > distance)
         {
 
+
             other.transform.position = new Vector2(destination.position.x, destination.position.y);
         }
     
