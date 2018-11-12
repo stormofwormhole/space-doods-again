@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DamageScript1 : MonoBehaviour {
+public class DamageScript1: MonoBehaviour {
 
     float damage = 5f;
 
