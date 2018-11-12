@@ -1054,6 +1054,21 @@ Prefab:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 212276235598628528, guid: 28b3270420eeb472b8cb2ff3a6ebac20,
+        type: 2}
+      propertyPath: m_SortingOrder
+      value: -4
+      objectReference: {fileID: 0}
+    - target: {fileID: 212138623524132056, guid: 28b3270420eeb472b8cb2ff3a6ebac20,
+        type: 2}
+      propertyPath: m_SortingOrder
+      value: -4
+      objectReference: {fileID: 0}
+    - target: {fileID: 212922627261766894, guid: 28b3270420eeb472b8cb2ff3a6ebac20,
+        type: 2}
+      propertyPath: m_SortingOrder
+      value: -4
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 28b3270420eeb472b8cb2ff3a6ebac20, type: 2}
   m_IsPrefabAsset: 0
@@ -1217,6 +1232,7 @@ GameObject:
   - component: {fileID: 767348855}
   - component: {fileID: 767348854}
   - component: {fileID: 767348853}
+  - component: {fileID: 767348852}
   m_Layer: 10
   m_Name: Player 2
   m_TagString: Untagged
@@ -1242,6 +1258,18 @@ Transform:
   m_Father: {fileID: 1554070672}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &767348852
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 767348850}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2db37ce94c489ca4382b8e4096a4f77e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  movementSpeed: 0.1
 --- !u!114 &767348853
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1253,7 +1281,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08daaa50ddc8e4896b50489d771f2291, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 2.5
+  speed: 0.5
   jumpForce: 3.5
   feetPos: {fileID: 185055164}
   checkRadius: 0.3
@@ -1380,10 +1408,10 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 0.2
+  m_Mass: 0.003
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0.55
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -1482,22 +1510,34 @@ Prefab:
     - target: {fileID: 212964818918127682, guid: 65f9bc67b55b4434d8e96462da668a2d,
         type: 2}
       propertyPath: m_Color.r
-      value: 0.764151
+      value: 0.5566038
       objectReference: {fileID: 0}
     - target: {fileID: 212964818918127682, guid: 65f9bc67b55b4434d8e96462da668a2d,
         type: 2}
       propertyPath: m_Color.g
-      value: 0.64114743
+      value: 0.46810094
       objectReference: {fileID: 0}
     - target: {fileID: 212964818918127682, guid: 65f9bc67b55b4434d8e96462da668a2d,
         type: 2}
       propertyPath: m_Color.b
-      value: 0.37126204
+      value: 0.28617838
       objectReference: {fileID: 0}
     - target: {fileID: 212964818918127682, guid: 65f9bc67b55b4434d8e96462da668a2d,
         type: 2}
       propertyPath: m_SortingOrder
-      value: -3
+      value: -4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4153088697003938, guid: 65f9bc67b55b4434d8e96462da668a2d, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 0.84586
+      objectReference: {fileID: 0}
+    - target: {fileID: 4153088697003938, guid: 65f9bc67b55b4434d8e96462da668a2d, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 0.84586
+      objectReference: {fileID: 0}
+    - target: {fileID: 4153088697003938, guid: 65f9bc67b55b4434d8e96462da668a2d, type: 2}
+      propertyPath: m_LocalScale.z
+      value: 0.84586
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 65f9bc67b55b4434d8e96462da668a2d, type: 2}
@@ -1904,17 +1944,17 @@ Prefab:
     - target: {fileID: 212276235598628528, guid: 28b3270420eeb472b8cb2ff3a6ebac20,
         type: 2}
       propertyPath: m_Color.r
-      value: 1
+      value: 0.7169812
       objectReference: {fileID: 0}
     - target: {fileID: 212276235598628528, guid: 28b3270420eeb472b8cb2ff3a6ebac20,
         type: 2}
       propertyPath: m_Color.g
-      value: 0.9372549
+      value: 0.6590587
       objectReference: {fileID: 0}
     - target: {fileID: 212276235598628528, guid: 28b3270420eeb472b8cb2ff3a6ebac20,
         type: 2}
       propertyPath: m_Color.b
-      value: 0.34117648
+      value: 0.33481666
       objectReference: {fileID: 0}
     - target: {fileID: 212276235598628528, guid: 28b3270420eeb472b8cb2ff3a6ebac20,
         type: 2}
@@ -1924,32 +1964,32 @@ Prefab:
     - target: {fileID: 212138623524132056, guid: 28b3270420eeb472b8cb2ff3a6ebac20,
         type: 2}
       propertyPath: m_Color.r
-      value: 0.9150943
+      value: 0.6603774
       objectReference: {fileID: 0}
     - target: {fileID: 212138623524132056, guid: 28b3270420eeb472b8cb2ff3a6ebac20,
         type: 2}
       propertyPath: m_Color.g
-      value: 0.8786908
+      value: 0.6420097
       objectReference: {fileID: 0}
     - target: {fileID: 212138623524132056, guid: 28b3270420eeb472b8cb2ff3a6ebac20,
         type: 2}
       propertyPath: m_Color.b
-      value: 0.11654504
+      value: 0.24608402
       objectReference: {fileID: 0}
     - target: {fileID: 212922627261766894, guid: 28b3270420eeb472b8cb2ff3a6ebac20,
         type: 2}
       propertyPath: m_Color.r
-      value: 0.9528302
+      value: 0.6226415
       objectReference: {fileID: 0}
     - target: {fileID: 212922627261766894, guid: 28b3270420eeb472b8cb2ff3a6ebac20,
         type: 2}
       propertyPath: m_Color.g
-      value: 0.83362204
+      value: 0.5873125
       objectReference: {fileID: 0}
     - target: {fileID: 212922627261766894, guid: 28b3270420eeb472b8cb2ff3a6ebac20,
         type: 2}
       propertyPath: m_Color.b
-      value: 0.13932894
+      value: 0.37887147
       objectReference: {fileID: 0}
     - target: {fileID: 4029447913705476, guid: 28b3270420eeb472b8cb2ff3a6ebac20, type: 2}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -7207,17 +7247,17 @@ Prefab:
     - target: {fileID: 212621424513358470, guid: e37523212016949f98a73b0f643064f6,
         type: 2}
       propertyPath: m_Color.r
-      value: 0.63446236
+      value: 0.47792807
       objectReference: {fileID: 0}
     - target: {fileID: 212621424513358470, guid: e37523212016949f98a73b0f643064f6,
         type: 2}
       propertyPath: m_Color.g
-      value: 0.50102353
+      value: 0.38714847
       objectReference: {fileID: 0}
     - target: {fileID: 212621424513358470, guid: e37523212016949f98a73b0f643064f6,
         type: 2}
       propertyPath: m_Color.b
-      value: 0.764151
+      value: 0.5660378
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e37523212016949f98a73b0f643064f6, type: 2}
@@ -7413,17 +7453,17 @@ Prefab:
     - target: {fileID: 212964818918127682, guid: 65f9bc67b55b4434d8e96462da668a2d,
         type: 2}
       propertyPath: m_Color.r
-      value: 0.37068352
+      value: 0.42212528
       objectReference: {fileID: 0}
     - target: {fileID: 212964818918127682, guid: 65f9bc67b55b4434d8e96462da668a2d,
         type: 2}
       propertyPath: m_Color.g
-      value: 0.72935814
+      value: 0.5271821
       objectReference: {fileID: 0}
     - target: {fileID: 212964818918127682, guid: 65f9bc67b55b4434d8e96462da668a2d,
         type: 2}
       propertyPath: m_Color.b
-      value: 0.9245283
+      value: 0.5849056
       objectReference: {fileID: 0}
     - target: {fileID: 4153088697003938, guid: 65f9bc67b55b4434d8e96462da668a2d, type: 2}
       propertyPath: m_LocalPosition.x
@@ -7942,17 +7982,17 @@ Prefab:
     - target: {fileID: 212621424513358470, guid: e37523212016949f98a73b0f643064f6,
         type: 2}
       propertyPath: m_Color.r
-      value: 0.745283
+      value: 0.49056602
       objectReference: {fileID: 0}
     - target: {fileID: 212621424513358470, guid: e37523212016949f98a73b0f643064f6,
         type: 2}
       propertyPath: m_Color.g
-      value: 0.40317008
+      value: 0.27536488
       objectReference: {fileID: 0}
     - target: {fileID: 212621424513358470, guid: e37523212016949f98a73b0f643064f6,
         type: 2}
       propertyPath: m_Color.b
-      value: 0.31287822
+      value: 0.42252922
       objectReference: {fileID: 0}
     - target: {fileID: 1932031078949068, guid: e37523212016949f98a73b0f643064f6, type: 2}
       propertyPath: m_IsActive
@@ -8401,7 +8441,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.25, y: 1.4}
+    oldSize: {x: 1.5625, y: 1.75}
     newSize: {x: 1.25, y: 1.4}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -8811,7 +8851,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.25, y: 1.4}
+    oldSize: {x: 1.5625, y: 1.75}
     newSize: {x: 1.25, y: 1.4}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -8953,10 +8993,10 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 0.2
+  m_Mass: 0.003
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0.55
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -9065,7 +9105,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 966addfae4e414802b34bec1e8a08a5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 2.5
+  speed: 0.5
   jumpForce: 3.5
   feetPos: {fileID: 1720356057}
   checkRadius: 0.3
@@ -9085,7 +9125,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2db37ce94c489ca4382b8e4096a4f77e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movementSpeed: 1.5
+  movementSpeed: 0.5
 --- !u!1 &1970329810
 GameObject:
   m_ObjectHideFlags: 0
@@ -9095,6 +9135,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1970329812}
   - component: {fileID: 1970329811}
+  - component: {fileID: 1970329813}
   m_Layer: 0
   m_Name: Platform
   m_TagString: Untagged
@@ -9125,7 +9166,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1970329810}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 6.65, y: -6.46, z: 0}
+  m_LocalPosition: {x: 6.65, y: -7, z: 0}
   m_LocalScale: {x: 0.029942563, y: 0.38812247, z: 0.5736053}
   m_Children:
   - {fileID: 1117004374}
@@ -9134,6 +9175,101 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 26
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &1970329813
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1970329810}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1001 &2004929309
 Prefab:
   m_ObjectHideFlags: 0
@@ -14024,17 +14160,17 @@ Prefab:
     - target: {fileID: 212621424513358470, guid: e37523212016949f98a73b0f643064f6,
         type: 2}
       propertyPath: m_Color.r
-      value: 0.8962264
+      value: 0.6320754
       objectReference: {fileID: 0}
     - target: {fileID: 212621424513358470, guid: e37523212016949f98a73b0f643064f6,
         type: 2}
       propertyPath: m_Color.g
-      value: 0.6665131
+      value: 0.47354126
       objectReference: {fileID: 0}
     - target: {fileID: 212621424513358470, guid: e37523212016949f98a73b0f643064f6,
         type: 2}
       propertyPath: m_Color.b
-      value: 0.57916516
+      value: 0.41442683
       objectReference: {fileID: 0}
     - target: {fileID: 1932031078949068, guid: e37523212016949f98a73b0f643064f6, type: 2}
       propertyPath: m_IsActive
