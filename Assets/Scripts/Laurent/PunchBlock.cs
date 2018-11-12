@@ -13,7 +13,7 @@ private Animator animator;
 	
 	// Update is called once per frame
 	void Update () {
-		if(Input.GetKey("z"))
+		if(Input.GetKey(KeyCode.Joystick1Button5))
 		{
 			animator.SetBool(("IsDefending"), true);
 

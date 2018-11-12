@@ -13,11 +13,12 @@ public class DamageScript : MonoBehaviour {
 	
    void OnTriggerEnter2D(Collider2D other)
     {
-        //if (other.gameObject.tag =="Player"){
+       //if (other.gameObject.tag =="Player"){
             
-        other.gameObject.GetComponent<HealthScript>().TakeDamage(damage);
+        other.gameObject.GetComponent<HealthScript1>().TakeDamage(damage);
         Debug.Log("DAMAGE");
     }
 
 }
+
 

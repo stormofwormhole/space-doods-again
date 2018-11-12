@@ -13,7 +13,8 @@ public class Player_Kick : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if(Input.GetKeyDown("c"))
+	
+		if(Input.GetKeyDown(KeyCode.Joystick1Button2))
 		{
 			animator.SetTrigger("Kick");
 		}

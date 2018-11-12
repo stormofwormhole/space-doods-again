@@ -159,7 +159,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05165fe29798e4e9fbfa167fa02c1583, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 3
+  speed: 1
 --- !u!114 &114895717918760966
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -171,7 +171,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0155252852a4b41e2afe73186b1b9767, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 2
+  speed: 0.5
   childTransform: {fileID: 4628384380493864}
   transformB: {fileID: 4655830798272988}
 --- !u!212 &212847565466333340
