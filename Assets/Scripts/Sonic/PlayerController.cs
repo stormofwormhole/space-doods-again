@@ -44,7 +44,7 @@ public class PlayerController : MonoBehaviour
             transform.eulerAngles = new Vector3(0, 180, 0);
         }
 
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Joystick1Button1))
         {
             isJumping = true;
             jumpTimeCounter = jumpTime;
@@ -52,7 +52,7 @@ public class PlayerController : MonoBehaviour
 
         }
 
-        if (Input.GetKey(KeyCode.Space) && isJumping == true)
+        if (Input.GetKey(KeyCode.Joystick1Button1) && isJumping == true)
         {
 
             if (jumpTimeCounter > 0)
@@ -68,7 +68,7 @@ public class PlayerController : MonoBehaviour
 
         }
 
-        if (Input.GetKeyUp(KeyCode.Space))
+        if (Input.GetKeyUp(KeyCode.Joystick1Button1))
         {
             isJumping = false;
         }
