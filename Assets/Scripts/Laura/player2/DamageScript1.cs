@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DamageScript : MonoBehaviour {
+public class DamageScript1 : MonoBehaviour {
 
     float damage = 5f;
 
@@ -15,7 +15,7 @@ public class DamageScript : MonoBehaviour {
     {
        //if (other.gameObject.tag =="Player"){
             
-        other.gameObject.GetComponent<HealthScript1>().TakeDamage(damage);
+        other.gameObject.GetComponent<HealthScript>().TakeDamage(damage);
         Debug.Log("DAMAGE");
     }
 

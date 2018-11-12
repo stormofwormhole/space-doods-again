@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PunchBlock : MonoBehaviour {
+public class Player_Kick1 : MonoBehaviour {
 
-private Animator animator;
+	private Animator animator;
 
 	// Use this for initialization
 	void Start () {
@@ -13,13 +13,10 @@ private Animator animator;
 	
 	// Update is called once per frame
 	void Update () {
-		if(Input.GetKey(KeyCode.Joystick1Button5))
+	
+		if(Input.GetKeyDown(KeyCode.Joystick2Button2))
 		{
-			animator.SetBool(("IsDefending"), true);
-
+			animator.SetTrigger("Kick");
 		}
-
-		 else animator.SetBool("IsDefending", false);
-
 	}
 }
