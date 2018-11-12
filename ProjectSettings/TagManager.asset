@@ -47,3 +47,6 @@ TagManager:
   - name: topLayer
     uniqueID: 3730307085
     locked: 0
+  - name: players
+    uniqueID: 758700053
+    locked: 0
