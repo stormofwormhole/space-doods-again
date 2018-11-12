@@ -8,7 +8,16 @@ EditorBuildSettings:
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/FINAL1.unity
     guid: 2048544a9634742b5a9f581417b22c0f
+  - enabled: 1
+    path: Assets/Scenes/START.unity
+    guid: a6ee18d2d1e5c49f283a394e589ea2e6
+  - enabled: 1
+    path: Assets/Scenes/FINAL2.unity
+    guid: 7bf8a173e1d8542d4a87f3ad47390cb9
+  - enabled: 1
+    path: Assets/Scenes/RELOAD.unity
+    guid: fbd9bb84bdc3c467a9cec8a16ff75015
   m_configObjects: {}
